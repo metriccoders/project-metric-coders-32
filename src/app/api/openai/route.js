@@ -10,7 +10,7 @@ export async function POST(req) {
 
   const response = await openai.images.generate({
     model: "dall-e-2",
-    prompt: "Generate a infographic with the following description:  "+data["chatMessage"],
+    prompt: "Generate a real estate virtual staging with the following description:  "+data["chatMessage"],
     size: "512x512"
   });
 
